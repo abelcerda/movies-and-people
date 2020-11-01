@@ -7,3 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Movie.create([{title: 'The big movie', release_year: 1956}, {title: 'The hit', release_year: 1960}])
+Person.create([{first_name: 'John', last_name: 'Smith'}])
+Role.create([{name: 'cast_member'}, {name: 'producer'}, {name: 'director'}])
