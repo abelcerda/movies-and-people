@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  background-color: #f0f0f0;
+}
+
+.item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  width: 250px;
+  padding: 15px;
+}
+
+.itemTitle {
+  flex: 1;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.itemContent {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+}
+
+.itemSubtitle {
+  width: 220px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
