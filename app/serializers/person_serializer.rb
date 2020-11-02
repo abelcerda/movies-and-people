@@ -16,11 +16,11 @@ class PersonSerializer < ActiveModel::Serializer
   private
 
   def map_movies(movies_objects)
-    movies_objects.pluck(:id, :title, :release_year).map { |id, title, release_year|
+    movies_objects.map { |movie_obj|
       {
-        id: id,
-        title: title,
-        release_year: release_year
+        id: movie_obj.id,
+        title: movie_obj.title,
+        release_year: movie_obj.release_year
       }
     }
   end
