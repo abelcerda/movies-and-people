@@ -11,6 +11,7 @@ function mapPersonName(people) {
 
 const MoviesList = ({ movies }) => (
   <div className={styles.container}>
+    <h2>Movies</h2>
     <div className={styles.content}>
       {movies.map((movie, index) => (
         <div key={index} className={styles.item}>
