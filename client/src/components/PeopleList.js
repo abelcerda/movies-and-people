@@ -19,15 +19,24 @@ const PeopleList = ({ people }) => (
             {person.first_name + " " + person.last_name}
           </span>
           <div className={styles.itemContent}>
-            <span className={styles.itemSubtitle}>
+            <span
+              className={styles.itemSubtitle}
+              title={mapMovieData(person.movies_as_director)}
+            >
               Movies as Director:{" "}
               <b>{mapMovieData(person.movies_as_director)}</b>
             </span>
-            <span className={styles.itemSubtitle}>
+            <span
+              className={styles.itemSubtitle}
+              title={mapMovieData(person.movies_as_producer)}
+            >
               Movies as Producer{" "}
               <b>{mapMovieData(person.movies_as_producer)}</b>
             </span>
-            <span className={styles.itemSubtitle}>
+            <span
+              className={styles.itemSubtitle}
+              title={mapMovieData(person.movies_as_actor_actress)}
+            >
               Movies as Actor/Actress{" "}
               <b>{mapMovieData(person.movies_as_actor_actress)}</b>
             </span>

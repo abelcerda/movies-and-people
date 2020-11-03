@@ -18,13 +18,22 @@ const MoviesList = ({ movies }) => (
           <span className={styles.itemTitle}>{movie.title}</span>
           <div className={styles.itemContent}>
             <span className={styles.itemSubtitle}>{movie.release_year}</span>
-            <span className={styles.itemSubtitle}>
+            <span
+              className={styles.itemSubtitle}
+              title={mapPersonName(movie.directors)}
+            >
               Directed by <b>{mapPersonName(movie.directors)}</b>
             </span>
-            <span className={styles.itemSubtitle}>
+            <span
+              className={styles.itemSubtitle}
+              title={mapPersonName(movie.producers)}
+            >
               Produced by <b>{mapPersonName(movie.producers)}</b>
             </span>
-            <span className={styles.itemSubtitle}>
+            <span
+              className={styles.itemSubtitle}
+              title={mapPersonName(movie.casting)}
+            >
               Starred by <b>{mapPersonName(movie.casting)}</b>
             </span>
           </div>
