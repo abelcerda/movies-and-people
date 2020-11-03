@@ -20,7 +20,13 @@ cast_member_role = Role.find_by :name => Role::CAST_MEMBER
 
 # Assign director
 Credit.create({ :movie_id => movies.first.id, :person_id => people.first.id, :role_id => director_role.id })
+Credit.create({ :movie_id => movies.first.id, :person_id => people.second.id, :role_id => director_role.id })
+Credit.create({ :movie_id => movies.second.id, :person_id => people.third.id, :role_id => director_role.id })
 # Assign producer
 Credit.create({ :movie_id => movies.first.id, :person_id => people.second.id, :role_id => producer_role.id })
+Credit.create({ :movie_id => movies.second.id, :person_id => people.third.id, :role_id => producer_role.id })
 # Assign actor
 Credit.create({ :movie_id => movies.first.id, :person_id => people.third.id, :role_id => cast_member_role.id })
+Credit.create({ :movie_id => movies.second.id, :person_id => people.first.id, :role_id => cast_member_role.id })
+Credit.create({ :movie_id => movies.second.id, :person_id => people.second.id, :role_id => cast_member_role.id })
+Credit.create({ :movie_id => movies.second.id, :person_id => people.third.id, :role_id => cast_member_role.id })
